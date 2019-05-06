@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp()) 
-
-
+void main() => runApp(MyApp()); 
 class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -14,6 +12,11 @@ class MyApp extends StatelessWidget{
         AppBar(
           title: Text(
             "Belajar Flutter"),
+        ),
+        body: Card(child: Column(children: <Widget>[
+        Image.asset('assets/food.jpg'),
+        Text('Surganya Makanan')
+        ],),
         ),
       ),
     );
