@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter on Progress'),
+      home: MyHomePage(title: 'Belajar Flutter'),
     );
   }
 }
