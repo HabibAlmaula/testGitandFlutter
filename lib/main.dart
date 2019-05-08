@@ -1,31 +1,28 @@
 import 'package:flutter/material.dart';
+import './product_manager.dart';
 
-void main() => runApp(MyApp()); 
-class MyApp extends StatelessWidget{
+void main() => runApp(MyApp());
+
+class MyApp extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return _MyAppState();
+  }
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return MaterialApp(
       theme: ThemeData(primarySwatch: Colors.red),
       home: Scaffold(
-        appBar: 
-        AppBar(
-          title: Text(
-            "Belajar Flutter"),
-        ),
-        body: Card(child: Column(children: <Widget>[
-        Image.asset('assets/food.jpg'),
-        Text('Surganya Makanan')
-        ],),
-        ),
-      ),
+          appBar: AppBar(
+            title: Text("Belajar Flutter"),
+          ),
+          body:ProductManager()),
     );
   }
-
 }
-
-
-
 
 // import 'package:flutter/material.dart';
 
